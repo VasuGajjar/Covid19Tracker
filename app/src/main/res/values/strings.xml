@@ -1,3 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Covid-19 Tracker</string>
+
+    <string-array name="search_array">
+        <item>India</item>
+        <item>Gujarat</item>
+        <item>Ahmedabad</item>
+    </string-array>
+
 </resources>
