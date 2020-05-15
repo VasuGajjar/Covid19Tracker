@@ -5,4 +5,4 @@ Keep a Track on Covid-19 (aka Corona Virus)
 <h3>Screenshots</h3>
 <img src="/india.jpg" width="360px">
 <img src="/gujarat.jpg" width="360px">
-<h4>To Download .apk : <a href="https://drive.google.com/file/d/1mdLL2vKx-olrwrtKok3PZfxZVH4yVy5h/view?usp=sharing" target="_blank">Click Here</a></h4>
+<h4>To Download .apk : <a href="https://drive.google.com/file/d/1Ef0UqoEOyl_nllpqBcwp2NTH17qg8TLS/view?usp=sharing" target="_blank">Click Here</a></h4>
