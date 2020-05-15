@@ -12,10 +12,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.loopj.android.http.AsyncHttpClient;
-import com.loopj.android.http.JsonHttpResponseHandler;
-import com.loopj.android.http.RequestParams;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
@@ -25,9 +21,6 @@ import org.json.JSONObject;
 
 import java.util.Date;
 
-import cz.msebera.android.httpclient.Header;
-
-import static com.loopj.android.http.AsyncHttpClient.log;
 
 public class MainActivity extends AppCompatActivity {
     Spinner spinner;
@@ -113,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
             }
             catch (Exception e) {
                 e.printStackTrace();
+                Toast.makeText(MainActivity.this, e.toString(), Toast.LENGTH_LONG).show();
             }
         }
 
@@ -168,6 +162,7 @@ public class MainActivity extends AppCompatActivity {
             }
             catch (Exception e) {
                 e.printStackTrace();
+                Toast.makeText(MainActivity.this, e.toString(), Toast.LENGTH_LONG).show();
             }
         }
 
@@ -208,21 +203,20 @@ public class MainActivity extends AppCompatActivity {
             progressDialog.dismiss();
 
             try {
-
-                todayCase.setText(jsonObject.getJSONObject("state_wise").getJSONObject("Gujarat").getString("deltaconfirmed"));
-                todayRecovered.setText(jsonObject.getJSONObject("state_wise").getJSONObject("Gujarat").getString("deltarecovered"));
-                todayDeath.setText(jsonObject.getJSONObject("state_wise").getJSONObject("Gujarat").getString("deltadeaths"));
-                totalCase.setText(jsonObject.getJSONObject("state_wise").getJSONObject("Gujarat").getString("confirmed"));
-                totalRecovered.setText(jsonObject.getJSONObject("state_wise").getJSONObject("Gujarat").getString("recovered"));
-                totalDeath.setText(jsonObject.getJSONObject("state_wise").getJSONObject("Gujarat").getString("deaths"));
-                active.setText(jsonObject.getJSONObject("state_wise").getJSONObject("Gujarat").getString("active"));
-                addCase.setText("+"+jsonObject.getJSONObject("state_wise").getJSONObject("Gujarat").getString("deltaconfirmed"));
-                addDeath.setText("+"+jsonObject.getJSONObject("state_wise").getJSONObject("Gujarat").getString("deltadeaths"));
-                addRecovered.setText("+"+jsonObject.getJSONObject("state_wise").getJSONObject("Gujarat").getString("deltarecovered"));
+                todayCase.setText(jsonObject.getJSONObject("state_wise").getJSONObject("Gujarat").getJSONObject("district").getJSONObject("Ahmedabad").getJSONObject("delta").getString("confirmed"));
+                todayRecovered.setText(jsonObject.getJSONObject("state_wise").getJSONObject("Gujarat").getJSONObject("district").getJSONObject("Ahmedabad").getJSONObject("delta").getString("recovered"));
+                todayDeath.setText(jsonObject.getJSONObject("state_wise").getJSONObject("Gujarat").getJSONObject("district").getJSONObject("Ahmedabad").getJSONObject("delta").getString("deceased"));
+                totalCase.setText(jsonObject.getJSONObject("state_wise").getJSONObject("Gujarat").getJSONObject("district").getJSONObject("Ahmedabad").getString("confirmed"));
+                totalRecovered.setText(jsonObject.getJSONObject("state_wise").getJSONObject("Gujarat").getJSONObject("district").getJSONObject("Ahmedabad").getString("recovered"));
+                totalDeath.setText(jsonObject.getJSONObject("state_wise").getJSONObject("Gujarat").getJSONObject("district").getJSONObject("Ahmedabad").getString("deceased"));
+                active.setText(jsonObject.getJSONObject("state_wise").getJSONObject("Gujarat").getJSONObject("district").getJSONObject("Ahmedabad").getString("active"));
+                addCase.setText("+"+jsonObject.getJSONObject("state_wise").getJSONObject("Gujarat").getJSONObject("district").getJSONObject("Ahmedabad").getJSONObject("delta").getString("confirmed"));
+                addDeath.setText("+"+jsonObject.getJSONObject("state_wise").getJSONObject("Gujarat").getJSONObject("district").getJSONObject("Ahmedabad").getJSONObject("delta").getString("deceased"));
+                addRecovered.setText("+"+jsonObject.getJSONObject("state_wise").getJSONObject("Gujarat").getJSONObject("district").getJSONObject("Ahmedabad").getJSONObject("delta").getString("recovered"));
                 updateTime.setText("Last Updated "+jsonObject.getJSONObject("state_wise").getJSONObject("Gujarat").getString("lastupdatedtime"));
             }
             catch (Exception e) {
-                e.printStackTrace();
+                Toast.makeText(MainActivity.this, e.toString(), Toast.LENGTH_LONG).show();
             }
         }
 
