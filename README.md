@@ -3,6 +3,8 @@ Keep a Track on Covid-19 (aka Corona Virus)
 <h3>Icon</h3>
 <img src="/covid tracker.svg" height="100px" width="100px">
 <h3>Screenshots</h3>
-<img src="/india.jpg" width="360px">
-<img src="/gujarat.jpg" width="360px">
-<h4>To Download .apk : <a href="https://drive.google.com/file/d/1Ef0UqoEOyl_nllpqBcwp2NTH17qg8TLS/view?usp=sharing" target="_blank">Click Here</a></h4>
+<img src="/global.jpg" width="120px">
+<img src="/india.jpg" width="120px">
+<img src="/gujarat.jpg" width="120px">
+<img src="/ahmedabad.jpg" width="120px">
+<h4>To Download .apk : <a href="https://drive.google.com/file/d/1JHtygUygw027PEPxSN4DjGDr8UL-zC-v/view?usp=sharing" target="_blank">Click Here</a></h4>
