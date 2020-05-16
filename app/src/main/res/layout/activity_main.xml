@@ -23,7 +23,7 @@
                 android:textColor="@color/colorAccent"
                 android:fontFamily="@font/bold"
                 android:textSize="@dimen/_28sdp"
-                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
                 android:layout_marginLeft="@dimen/_20sdp"
                 android:layout_centerHorizontal="true"/>
 
@@ -62,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/shead1"
                 android:layout_alignStart="@id/shead1"
-                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
                 android:orientation="vertical">
 
                 <TextView
@@ -89,7 +89,8 @@
                     android:layout_gravity="center_horizontal"
                     android:textSize="@dimen/_18sdp"
                     android:textColor="@color/colorAccent"
-                    android:fontFamily="@font/bold"/>
+                    android:fontFamily="@font/bold"
+                    android:textIsSelectable="true"/>
 
             </LinearLayout>
 
@@ -98,7 +99,7 @@
                 android:layout_width="@dimen/_80sdp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/shead1"
-                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
                 android:orientation="vertical"
                 android:layout_alignEnd="@id/shead1">
 
@@ -126,7 +127,8 @@
                     android:layout_gravity="center_horizontal"
                     android:textSize="@dimen/_18sdp"
                     android:textColor="@color/colorAccent"
-                    android:fontFamily="@font/bold"/>
+                    android:fontFamily="@font/bold"
+                    android:textIsSelectable="true"/>
 
             </LinearLayout>
 
@@ -135,7 +137,7 @@
                 android:layout_width="@dimen/_95sdp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/shead1"
-                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
                 android:paddingLeft="@dimen/_15sdp"
                 android:orientation="vertical"
                 android:layout_centerHorizontal="true">
@@ -164,7 +166,8 @@
                     android:layout_gravity="center_horizontal"
                     android:textSize="@dimen/_18sdp"
                     android:textColor="@color/colorAccent"
-                    android:fontFamily="@font/bold"/>
+                    android:fontFamily="@font/bold"
+                    android:textIsSelectable="true"/>
 
             </LinearLayout>
 
@@ -177,7 +180,7 @@
                 android:textColor="@color/colorAccent"
                 android:layout_below="@id/ll1"
                 android:layout_alignStart="@id/shead1"
-                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_25sdp"
                 android:textSize="@dimen/_20sdp"/>
 
             <androidx.cardview.widget.CardView
@@ -208,8 +211,9 @@
                         android:fontFamily="@font/bold"
                         android:layout_centerInParent="true"
                         android:textColor="@color/colorOrange"
-                        android:textSize="@dimen/_20sdp"
+                        android:textSize="@dimen/_22sdp"
                         android:layout_marginBottom="@dimen/_5sdp"
+                        android:textIsSelectable="true"
                         />
                     <TextView
                         android:id="@+id/addCases"
@@ -253,8 +257,9 @@
                         android:fontFamily="@font/bold"
                         android:layout_centerInParent="true"
                         android:textColor="@color/colorRed"
-                        android:textSize="@dimen/_20sdp"
+                        android:textSize="@dimen/_22sdp"
                         android:layout_marginBottom="@dimen/_5sdp"
+                        android:textIsSelectable="true"
                         />
                     <TextView
                         android:id="@+id/addDeath"
@@ -298,8 +303,9 @@
                         android:fontFamily="@font/bold"
                         android:layout_centerInParent="true"
                         android:textColor="@color/colorGreen"
-                        android:textSize="@dimen/_20sdp"
+                        android:textSize="@dimen/_22sdp"
                         android:layout_marginBottom="@dimen/_5sdp"
+                        android:textIsSelectable="true"
                         />
                     <TextView
                         android:id="@+id/addRecovered"
@@ -343,7 +349,8 @@
                         android:fontFamily="@font/bold"
                         android:layout_centerInParent="true"
                         android:textColor="@color/colorOrange"
-                        android:textSize="@dimen/_20sdp"
+                        android:textSize="@dimen/_22sdp"
+                        android:textIsSelectable="true"
                         />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -369,7 +376,8 @@
                 android:fontFamily="@font/regular"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:textColor="@color/colorAccent"
-                android:layout_marginBottom="@dimen/_20sdp"/>
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:textIsSelectable="true"/>
 
         </RelativeLayout>
 

@@ -3,6 +3,7 @@
     <string name="app_name">Covid-19 Tracker</string>
 
     <string-array name="search_array">
+        <item>Global</item>
         <item>India</item>
         <item>Gujarat</item>
         <item>Ahmedabad</item>
